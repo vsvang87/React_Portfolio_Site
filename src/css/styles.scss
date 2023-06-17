@@ -1,0 +1,27 @@
+@import "navbar";
+@import "hero";
+@import "projects";
+@import "helper";
+@import "about";
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+.wrapper {
+  width: min(80%, 100rem);
+  margin-inline: auto;
+}
+.app {
+  background: url(../image/bgshiny.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

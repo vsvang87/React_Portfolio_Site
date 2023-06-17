@@ -1,0 +1,67 @@
+@import "helper";
+
+.project-container {
+  min-height: 100vh;
+  @include flexCenter;
+
+  h1 {
+    @include flexJustifyStart;
+    font-family: "Sigmar", cursive;
+    font-weight: 100;
+  }
+  .line {
+    width: 200px;
+    height: 2px;
+    background: $red;
+    display: block;
+    margin-left: 1rem;
+  }
+  .project-content {
+    margin-top: 1.5rem;
+    border: 1px solid $offWhite;
+    background: $offWhite;
+    border-radius: 10px;
+    min-height: 100vh;
+    padding: 3rem;
+
+    .project-inner-content {
+      .project-links {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 2rem 0 3rem 0;
+        li {
+          list-style-type: none;
+          padding: 0 0.5rem;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        .project-card {
+          border: 1px solid lightgray;
+          box-shadow: 2px 12px 20px 0 rgba($color: #000000, $alpha: 0.1);
+          border-radius: 10px;
+
+          h4 {
+            text-align: center;
+            padding: 1rem 0;
+          }
+          .img-div {
+            padding: 1.5rem;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

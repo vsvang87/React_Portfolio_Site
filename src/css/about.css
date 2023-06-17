@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.about-section {
+  min-height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about-section .about-container {
+  min-height: 90vh;
+  margin-top: 1.5rem;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 10px;
+  background: rgb(240, 240, 240);
+  padding: 3rem;
+}
+.about-section .about-container h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Sigmar", cursive;
+  font-weight: 100;
+}
+.about-section .about-container .line {
+  width: 200px;
+  height: 2px;
+  background: rgb(228, 120, 120);
+  display: block;
+  margin-left: 1rem;
+}
+.about-section .about-container .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.about-section .about-container .about-content .about-info {
+  width: 70%;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  padding: 0 2rem;
+}
+.about-section .about-container .about-content .about-info h2 {
+  margin-bottom: 1rem;
+}
+.about-section .about-container .about-content .about-info p {
+  color: rgb(136, 136, 136);
+}
+.about-section .about-container .about-content .about-img {
+  width: 30%;
+}
+.about-section .about-container .about-content .about-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about-section .about-container .about-content .contact-container {
+  margin-top: 2rem;
+}
+.about-section .about-container .about-content .contact-container p {
+  color: rgb(136, 136, 136);
+}
+.about-section .about-container .about-content .contact-container p i {
+  color: rgb(228, 120, 120);
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+.about-section .about-container .skills-container {
+  margin-top: 3rem;
+  min-height: 30vh;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  font-weight: bold;
+}
+.about-section .about-container .skills-container h2 {
+  font-family: "Sigmar", cursive;
+  font-weight: 100;
+}
+.about-section .about-container .skills-container .skills-content {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  height: 100%;
+  padding: 1rem;
+}
+.about-section .about-container .skills-container .skills-content li {
+  color: rgb(136, 136, 136);
+  list-style-type: none;
+}
+.about-section .about-container .skills-container .skills-content li::marker {
+  content: "✔️";
+}/*# sourceMappingURL=about.css.map */

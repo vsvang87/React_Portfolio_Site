@@ -1,0 +1,75 @@
+@import "helper";
+
+.hero-container {
+  min-height: 100vh;
+
+  .hero-content {
+    min-height: 80vh;
+    @include flexCenter;
+
+    .hero-intro {
+      @include flexCenter;
+      flex-direction: column;
+      img {
+        width: 20%;
+        clip-path: circle();
+      }
+      h1 {
+        color: $offWhite;
+        font-size: 2.5rem;
+      }
+      p {
+        margin: 0.8rem 0 0 0;
+        color: $mediumGray;
+        font-weight: bold;
+      }
+
+      .social-links {
+        display: flex;
+        margin: 1.5rem 0;
+        .github {
+          a {
+            background: $offWhite;
+            border: 1px solid $offWhite;
+            border-radius: 5px;
+            padding: 0.6rem 0.7rem 0.3rem 0.7rem;
+            i {
+              font-size: 1.5rem;
+              color: $offBlack;
+            }
+          }
+        }
+        .linkedin {
+          margin-left: 1rem;
+          a {
+            background: $offWhite;
+            border: 1px solid $offWhite;
+            border-radius: 5px;
+            padding: 0.6rem 0.7rem 0.3rem 0.7rem;
+            i {
+              font-size: 1.5rem;
+              color: rgb(82, 163, 255);
+            }
+          }
+        }
+      }
+      .resume-div {
+        border: 1px solid $red;
+        background: $red;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        transition: 0.15s ease-in-out;
+        &:hover {
+          background: transparent;
+        }
+
+        a {
+          color: $offWhite;
+          text-decoration: none;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

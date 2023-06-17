@@ -1,0 +1,26 @@
+$red: rgb(228, 120, 120);
+$orange: rgb(212, 143, 51);
+$offBlack: rgb(44, 43, 43);
+$offWhite: rgb(240, 240, 240);
+$mediumGray: rgb(136, 136, 136);
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flexAlignStart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@mixin flexJustifyStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
