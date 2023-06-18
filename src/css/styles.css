@@ -14,7 +14,9 @@
 }
 .header-nav-content .logo {
   text-decoration: none;
-  color: rgb(240, 240, 240);
+  color: rgb(248, 248, 248);
+  font-family: "Lobster", cursive;
+  font-size: 1.8rem;
 }
 .header-nav-content .navlinks {
   display: flex;
@@ -22,6 +24,11 @@
   align-items: center;
   padding: 2rem 0;
   margin: 0 0;
+}
+@media (max-width: 960px) {
+  .header-nav-content .navlinks {
+    display: none;
+  }
 }
 .header-nav-content .navlinks li {
   font-weight: bold;
@@ -34,7 +41,7 @@
   text-decoration: none;
   padding: 0 1rem;
   margin-left: 0 0.5rem;
-  color: rgb(240, 240, 240);
+  color: rgb(248, 248, 248);
   background: rgb(228, 120, 120);
   font-weight: 600;
   padding: 0.5rem 0.8rem;
@@ -49,7 +56,7 @@
   text-decoration: none;
   padding: 0 1rem;
   margin-left: 0 0.5rem;
-  color: rgb(240, 240, 240);
+  color: rgb(248, 248, 248);
   font-weight: 600;
   padding: 0.5rem 0.8rem;
   border: 2px solid rgb(228, 120, 120);
@@ -81,21 +88,21 @@
           clip-path: circle();
 }
 .hero-container .hero-content .hero-intro h1 {
-  color: rgb(240, 240, 240);
+  color: rgb(248, 248, 248);
   font-size: 2.5rem;
 }
 .hero-container .hero-content .hero-intro p {
   margin: 0.8rem 0 0 0;
   color: rgb(136, 136, 136);
-  font-weight: bold;
+  font-family: "Alata", sans-serif;
 }
 .hero-container .hero-content .hero-intro .social-links {
   display: flex;
   margin: 1.5rem 0;
 }
 .hero-container .hero-content .hero-intro .social-links .github a {
-  background: rgb(240, 240, 240);
-  border: 1px solid rgb(240, 240, 240);
+  background: rgb(248, 248, 248);
+  border: 1px solid rgb(248, 248, 248);
   border-radius: 5px;
   padding: 0.6rem 0.7rem 0.3rem 0.7rem;
 }
@@ -107,8 +114,8 @@
   margin-left: 1rem;
 }
 .hero-container .hero-content .hero-intro .social-links .linkedin a {
-  background: rgb(240, 240, 240);
-  border: 1px solid rgb(240, 240, 240);
+  background: rgb(248, 248, 248);
+  border: 1px solid rgb(248, 248, 248);
   border-radius: 5px;
   padding: 0.6rem 0.7rem 0.3rem 0.7rem;
 }
@@ -117,7 +124,7 @@
   color: rgb(82, 163, 255);
 }
 .hero-container .hero-content .hero-intro .resume-div {
-  border: 1px solid rgb(228, 120, 120);
+  border: 2px solid rgb(228, 120, 120);
   background: rgb(228, 120, 120);
   border-radius: 5px;
   font-weight: bold;
@@ -128,9 +135,12 @@
   background: transparent;
 }
 .hero-container .hero-content .hero-intro .resume-div a {
-  color: rgb(240, 240, 240);
+  color: rgb(248, 248, 248);
   text-decoration: none;
   font-size: 1.2rem;
+}
+.hero-container .hero-content .hero-intro .resume-div a i {
+  padding-right: 0.3rem;
 }
 
 .project-container {
@@ -143,8 +153,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: "Sigmar", cursive;
-  font-weight: 100;
+  font-family: "Lobster", cursive;
 }
 .project-container .line {
   width: 200px;
@@ -155,8 +164,8 @@
 }
 .project-container .project-content {
   margin-top: 1.5rem;
-  border: 1px solid rgb(240, 240, 240);
-  background: rgb(240, 240, 240);
+  border: 1px solid rgb(248, 248, 248);
+  background: rgb(248, 248, 248);
   border-radius: 10px;
   min-height: 100vh;
   padding: 3rem;
@@ -180,20 +189,48 @@
   gap: 2rem;
 }
 .project-container .project-content .project-inner-content .card-container .project-card {
-  border: 1px solid lightgray;
-  box-shadow: 2px 12px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-}
-.project-container .project-content .project-inner-content .card-container .project-card h4 {
-  text-align: center;
-  padding: 1rem 0;
+  letter-spacing: 0.05rem;
 }
 .project-container .project-content .project-inner-content .card-container .project-card .img-div {
   padding: 1.5rem;
 }
 .project-container .project-content .project-inner-content .card-container .project-card .img-div img {
   width: 100%;
+  max-height: 250px;
+  min-height: 180px;
   border-radius: 10px;
+}
+.project-container .project-content .project-inner-content .card-container .project-card .links-container {
+  padding: 0 2rem;
+}
+.project-container .project-content .project-inner-content .card-container .project-card .links-container h4 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.project-container .project-content .project-inner-content .card-container .project-card .links-container .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0 1.2rem 0;
+  gap: 1rem;
+}
+.project-container .project-content .project-inner-content .card-container .project-card .links-container .links .link-col {
+  border-bottom: 2px solid transparent;
+  transition: 0.15s ease-in-out;
+  font-weight: bold;
+}
+.project-container .project-content .project-inner-content .card-container .project-card .links-container .links .link-col:hover {
+  border-bottom: 2px solid rgb(228, 120, 120);
+}
+.project-container .project-content .project-inner-content .card-container .project-card .links-container .links .link-col a {
+  text-decoration: none;
+  color: rgb(44, 43, 43);
+}
+.project-container .project-content .project-inner-content .card-container .project-card .links-container .links .link-col a i {
+  padding-right: 0.3rem;
+  color: rgb(228, 120, 120);
 }
 
 .about-section {
@@ -205,17 +242,17 @@
 .about-section .about-container {
   min-height: 90vh;
   margin-top: 1.5rem;
-  border: 1px solid rgb(240, 240, 240);
+  border: 1px solid rgb(248, 248, 248);
   border-radius: 10px;
-  background: rgb(240, 240, 240);
+  background: rgb(248, 248, 248);
   padding: 3rem;
 }
 .about-section .about-container h1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: "Sigmar", cursive;
-  font-weight: 100;
+  font-family: "Lobster", cursive;
+  font-size: 1.8rem;
 }
 .about-section .about-container .line {
   width: 200px;
@@ -241,6 +278,7 @@
 }
 .about-section .about-container .about-content .about-info h2 {
   margin-bottom: 1rem;
+  font-family: "Alata", sans-serif;
 }
 .about-section .about-container .about-content .about-info p {
   color: rgb(136, 136, 136);
@@ -268,14 +306,14 @@
 .about-section .about-container .skills-container {
   margin-top: 3rem;
   min-height: 30vh;
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 2rem;
   font-weight: bold;
 }
 .about-section .about-container .skills-container h2 {
-  font-family: "Sigmar", cursive;
-  font-weight: 100;
+  font-family: "Lobster", cursive;
+  font-size: 1.8rem;
 }
 .about-section .about-container .skills-container .skills-content {
   margin-top: 1rem;
@@ -291,6 +329,119 @@
 }
 .about-section .about-container .skills-container .skills-content li::marker {
   content: "✔️";
+}
+
+.contact-section {
+  min-height: 100vh;
+}
+.contact-section .contact-container {
+  margin-top: 1.5rem;
+  min-height: 80vh;
+  border: 1px solid rgb(248, 248, 248);
+  border-radius: 10px;
+  background: rgb(248, 248, 248);
+  padding: 3rem;
+}
+.contact-section .contact-container h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Lobster", cursive;
+  font-size: 1.8rem;
+}
+.contact-section .contact-container .line {
+  width: 200px;
+  height: 2px;
+  background: rgb(228, 120, 120);
+  display: block;
+  margin-left: 1rem;
+}
+.contact-section .contact-container .contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 1720px) {
+  .contact-section .contact-container .contact-content {
+    flex-direction: column;
+  }
+}
+.contact-section .contact-container .contact-content .contact-info {
+  width: 30%;
+}
+@media (max-width: 1720px) {
+  .contact-section .contact-container .contact-content .contact-info {
+    width: 100%;
+  }
+}
+.contact-section .contact-container .contact-content .contact-info .card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+  min-height: 146px;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  font-weight: bold;
+}
+.contact-section .contact-container .contact-content .contact-info .card h3 {
+  margin-bottom: 1rem;
+  font-family: "Alata", sans-serif;
+}
+.contact-section .contact-container .contact-content .contact-info .phone {
+  background: rgb(255, 241, 241);
+}
+.contact-section .contact-container .contact-content .contact-info .email {
+  background: rgb(238, 251, 255);
+}
+.contact-section .contact-container .contact-content .contact-info .location {
+  background: rgb(251, 241, 255);
+}
+.contact-section .contact-container .contact-content .contact-form {
+  width: 70%;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 53vh;
+  padding: 3rem;
+}
+@media (max-width: 1720px) {
+  .contact-section .contact-container .contact-content .contact-form {
+    width: 100%;
+  }
+}
+.contact-section .contact-container .contact-content .contact-form form .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.contact-section .contact-container .contact-content .contact-form form .input-group label {
+  font-weight: bold;
+}
+.contact-section .contact-container .contact-content .contact-form form .input-group input,
+.contact-section .contact-container .contact-content .contact-form form .input-group textarea {
+  outline: none;
+  resize: none;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.7rem 0.3rem;
+  font-weight: bold;
+}
+.contact-section .contact-container .contact-content .contact-form form .submit-btn button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgb(228, 120, 120);
+  border: 2px solid rgb(228, 120, 120);
+  border-radius: 5px;
+  color: rgb(248, 248, 248);
+  transition: 0.15s ease-in-out;
+}
+.contact-section .contact-container .contact-content .contact-form form .submit-btn button:hover {
+  background: transparent;
+  color: rgb(228, 120, 120);
 }
 
 * {

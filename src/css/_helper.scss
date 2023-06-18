@@ -1,7 +1,7 @@
 $red: rgb(228, 120, 120);
 $orange: rgb(212, 143, 51);
 $offBlack: rgb(44, 43, 43);
-$offWhite: rgb(240, 240, 240);
+$offWhite: rgb(248, 248, 248);
 $mediumGray: rgb(136, 136, 136);
 
 @mixin flexCenter {
@@ -23,4 +23,15 @@ $mediumGray: rgb(136, 136, 136);
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+@mixin mediaQuery1720px {
+  @media (max-width: 1720px) {
+    @content;
+  }
+}
+@mixin mediaQuery960px {
+  @media (max-width: 960px) {
+    @content;
+  }
 }

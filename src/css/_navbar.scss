@@ -1,4 +1,4 @@
-@import "helper";
+@use "./helper" as *;
 
 .header-container {
   @include flexSpaceBetween;
@@ -8,14 +8,20 @@
   @include flexSpaceBetween;
   margin-top: 2rem;
   letter-spacing: 0.05rem;
+
   .logo {
     text-decoration: none;
     color: $offWhite;
+    font-family: "Lobster", cursive;
+    font-size: 1.8rem;
   }
   .navlinks {
     @include flexSpaceBetween();
     padding: 2rem 0;
     margin: 0 0;
+    @include mediaQuery960px {
+      display: none;
+    }
     li {
       font-weight: bold;
       list-style-type: none;

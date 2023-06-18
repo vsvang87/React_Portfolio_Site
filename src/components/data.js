@@ -29,7 +29,7 @@ export default {
       description:
         "An app that will generate a random password for you. Allows user to set character length and include uppercase, lowercase, symbol, or number in their password. Also added click to paste on password for easy copy and paste.",
       tech: "HTML, CSS, JavaScript",
-      site: "",
+      site: "https://visaypasswordgenerator.netlify.app/",
       github: "https://github.com/vsvang87/Password-Generator/tree/master",
       category: "javascript",
     },

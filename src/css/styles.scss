@@ -1,8 +1,10 @@
-@import "navbar";
-@import "hero";
-@import "projects";
-@import "helper";
-@import "about";
+@use "navbar";
+@use "hero";
+@use "projects";
+@use "helper";
+@use "about";
+@use "contact";
+@use "modal";
 
 * {
   box-sizing: border-box;

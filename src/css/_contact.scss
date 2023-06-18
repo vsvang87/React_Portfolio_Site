@@ -1,0 +1,111 @@
+@use "./helper" as *;
+@use "./breakpoints" as *;
+
+.contact-section {
+  min-height: 100vh;
+
+  .contact-container {
+    margin-top: 1.5rem;
+    min-height: 80vh;
+    border: 1px solid $offWhite;
+    border-radius: 10px;
+    background: $offWhite;
+    padding: 3rem;
+
+    h1 {
+      @include flexJustifyStart;
+      font-family: "Lobster", cursive;
+      font-size: 1.8rem;
+    }
+    .line {
+      width: 200px;
+      height: 2px;
+      background: $red;
+      display: block;
+      margin-left: 1rem;
+    }
+    .contact-content {
+      @include flexAlignStart;
+      gap: 2rem;
+      margin-top: 3rem;
+      @include mediaQuery1720px() {
+        flex-direction: column;
+      }
+      .contact-info {
+        width: 30%;
+        @include mediaQuery1720px() {
+          width: 100%;
+        }
+        .card {
+          border-radius: 10px;
+          box-shadow: 5px 5px 20px 0 rgba($color: #000000, $alpha: 0.1);
+          min-height: 146px;
+          margin-bottom: 1.5rem;
+          padding: 2rem;
+          font-weight: bold;
+
+          h3 {
+            margin-bottom: 1rem;
+            font-family: "Alata", sans-serif;
+          }
+        }
+        .phone {
+          background: rgb(255, 241, 241);
+        }
+        .email {
+          background: rgb(238, 251, 255);
+        }
+        .location {
+          background: rgb(251, 241, 255);
+        }
+      }
+      .contact-form {
+        width: 70%;
+        box-shadow: 5px 5px 20px 0 rgba($color: #000000, $alpha: 0.1);
+        border-radius: 10px;
+        height: 53vh;
+        padding: 3rem;
+        @include mediaQuery1720px() {
+          width: 100%;
+        }
+
+        form {
+          .input-group {
+            @include flexAlignStart;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            label {
+              font-weight: bold;
+            }
+            input,
+            textarea {
+              outline: none;
+              resize: none;
+              border: 1px solid rgb(231, 231, 231);
+              border-radius: 5px;
+              width: 100%;
+              padding: 0.7rem 0.3rem;
+              font-weight: bold;
+            }
+          }
+          .submit-btn {
+            button {
+              padding: 0.5rem 1rem;
+              font-weight: bold;
+              cursor: pointer;
+              background: $red;
+              border: 2px solid $red;
+              border-radius: 5px;
+              color: $offWhite;
+              transition: 0.15s ease-in-out;
+              &:hover {
+                background: transparent;
+                color: $red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

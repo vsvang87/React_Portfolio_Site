@@ -1,4 +1,4 @@
-@import "helper";
+@use "./helper" as *;
 
 .hero-container {
   min-height: 100vh;
@@ -21,7 +21,7 @@
       p {
         margin: 0.8rem 0 0 0;
         color: $mediumGray;
-        font-weight: bold;
+        font-family: "Alata", sans-serif;
       }
 
       .social-links {
@@ -54,7 +54,7 @@
         }
       }
       .resume-div {
-        border: 1px solid $red;
+        border: 2px solid $red;
         background: $red;
         border-radius: 5px;
         font-weight: bold;
@@ -68,6 +68,9 @@
           color: $offWhite;
           text-decoration: none;
           font-size: 1.2rem;
+          i {
+            padding-right: 0.3rem;
+          }
         }
       }
     }

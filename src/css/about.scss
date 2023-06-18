@@ -1,4 +1,4 @@
-@import "helper";
+@use "./helper" as *;
 
 .about-section {
   min-height: 105vh;
@@ -13,8 +13,8 @@
 
     h1 {
       @include flexJustifyStart;
-      font-family: "Sigmar", cursive;
-      font-weight: 100;
+      font-family: "Lobster", cursive;
+      font-size: 1.8rem;
     }
     .line {
       width: 200px;
@@ -37,6 +37,7 @@
         padding: 0 2rem;
         h2 {
           margin-bottom: 1rem;
+          font-family: "Alata", sans-serif;
         }
         p {
           color: $mediumGray;
@@ -68,14 +69,14 @@
     .skills-container {
       margin-top: 3rem;
       min-height: 30vh;
-      box-shadow: 5px 5px 10px 0 rgba($color: #000000, $alpha: 0.1);
+      box-shadow: 5px 5px 20px 0 rgba($color: #000000, $alpha: 0.1);
       border-radius: 10px;
       padding: 2rem;
       font-weight: bold;
 
       h2 {
-        font-family: "Sigmar", cursive;
-        font-weight: 100;
+        font-family: "Lobster", cursive;
+        font-size: 1.8rem;
       }
       .skills-content {
         margin-top: 1rem;
@@ -87,6 +88,7 @@
         li {
           color: $mediumGray;
           list-style-type: none;
+
           &::marker {
             content: "✔️";
           }

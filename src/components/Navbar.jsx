@@ -9,7 +9,7 @@ const Header = () => {
         <div className="header-nav-content">
           <h3>
             <Link to="/" className="logo">
-              VANG
+              .VANG
             </Link>
           </h3>
           <ul className="navlinks">

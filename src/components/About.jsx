@@ -16,8 +16,8 @@ function About() {
               <div className="about-info about-col">
                 <h2>Who Am I?</h2>
                 <p>
-                  I'm a Frontend Developer base off Anderson, SC. I enjoy
-                  turning ideas into beautiful and intuitive designs.
+                  I'm a Software Developer with an eye for responsive UI design.
+                  I enjoy turning ideas into beautiful and intuitive designs.
                 </p>
                 <p>
                   My aim is to bring across your message and identity in the
@@ -27,7 +27,7 @@ function About() {
                 <div className="contact-container">
                   <h2>Personal Info</h2>
                   <p>
-                    <i class="fa-solid fa-phone"></i> (414) 243-4862
+                    <i class="fa-solid fa-phone"></i> 414-243-4862
                   </p>
                   <p>
                     <i class="fa-solid fa-envelope"></i> vsvang@gmail.com

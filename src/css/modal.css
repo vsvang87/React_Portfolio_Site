@@ -1,0 +1,20 @@
+.body {
+  position: relative;
+}
+
+.modal-container {
+  width: 50%;
+  margin: 200px auto;
+  min-height: 500px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+.modal-container .overlay {
+  background: rgb(228, 120, 120);
+  border-radius: 10px;
+  height: 100%;
+  padding: 2rem;
+}/*# sourceMappingURL=modal.css.map */
