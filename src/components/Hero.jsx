@@ -1,10 +1,19 @@
 import React from "react";
-import img1 from "./../../public/image/visay2.jpg";
+import img1 from "/image/visay2.jpg";
 import resume from "../Resume/frontend.pdf";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="hero-container">
+    <motion.div
+      className="hero-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.5 } }}
+      // initial={{ width: 0 }}
+      // animate={{ width: "100%" }}
+      // exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}
+    >
       <div className="wrapper">
         <div className="hero-content">
           <div className="hero-intro">
@@ -33,7 +42,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

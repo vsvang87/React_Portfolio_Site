@@ -24,6 +24,7 @@
     padding: 3rem;
 
     .project-inner-content {
+      margin-top: 3rem;
       .project-links {
         display: flex;
         justify-content: flex-end;
@@ -44,6 +45,7 @@
         .project-card {
           box-shadow: 5px 5px 20px 5px rgba($color: #000000, $alpha: 0.1);
           border-radius: 10px;
+
           letter-spacing: 0.05rem;
 
           .img-div {
@@ -85,6 +87,9 @@
             }
           }
         }
+        // .project-card.active {
+        //   display: grid;
+        // }
       }
     }
   }

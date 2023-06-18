@@ -1,16 +1,13 @@
 import { useState } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 function Contact() {
-  // const [data, setData] = useState({
-  //   firstName: "",
-  //   email: "",
-  //   message: "",
-  // });
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSuccessful, setIsSuccessful] = useState(false);
 
   const form = useRef();
   const sendEmail = (e) => {
@@ -30,11 +27,22 @@ function Contact() {
           console.log(error.text);
         }
       );
+    setEmail("");
+    setFirstName("");
+    setMessage("");
   };
 
   return (
     <>
-      <section className="contact-section">
+      <motion.section
+        className="contact-section"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0, transition: { duration: 0.5 } }}
+        // initial={{ width: 0 }}
+        // animate={{ width: "100%" }}
+        // exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}
+      >
         <div className="wrapper">
           <div className="contact-container">
             <h1>
@@ -65,6 +73,7 @@ function Contact() {
                       name="from_name"
                       value={firstName}
                       onChange={(e) => setFirstName(e.target.value)}
+                      required
                     />
                   </div>
                   <div className="input-group">
@@ -74,6 +83,7 @@ function Contact() {
                       name="from_email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
+                      required
                     />
                   </div>
                   <div className="input-group">
@@ -84,6 +94,7 @@ function Contact() {
                       rows="10"
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
+                      required
                     ></textarea>
                   </div>
                   <div className="submit-btn">
@@ -94,7 +105,7 @@ function Contact() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }
