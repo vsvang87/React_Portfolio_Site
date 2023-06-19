@@ -144,7 +144,7 @@
 }
 
 .project-container {
-  min-height: 100vh;
+  min-height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,6 +169,9 @@
   border-radius: 10px;
   min-height: 100vh;
   padding: 3rem;
+}
+.project-container .project-content .project-inner-content {
+  margin-top: 3rem;
 }
 .project-container .project-content .project-inner-content .project-links {
   display: flex;
@@ -332,7 +335,7 @@
 }
 
 .contact-section {
-  min-height: 100vh;
+  min-height: 140vh;
 }
 .contact-section .contact-container {
   margin-top: 1.5rem;
@@ -442,6 +445,31 @@
 .contact-section .contact-container .contact-content .contact-form form .submit-btn button:hover {
   background: transparent;
   color: rgb(228, 120, 120);
+}
+
+body {
+  position: relative;
+}
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.modal-container {
+  width: 50%;
+  margin: 200px auto;
+  min-height: 500px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+.modal-container .overlay {
+  background: rgb(228, 120, 120);
+  border-radius: 10px;
+  height: 100%;
+  padding: 2rem;
 }
 
 * {

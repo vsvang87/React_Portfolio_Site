@@ -1,5 +1,9 @@
-.body {
+body {
   position: relative;
+}
+
+body.active-modal {
+  overflow-y: hidden;
 }
 
 .modal-container {

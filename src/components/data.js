@@ -8,8 +8,8 @@ export default {
         "A responsive web app for car enthusiasts to find meet ups or host their own events in their location. Has user login authentication and CRUD operations. Implement Cloudinary API to upload pictures and Google Maps to update and display markers on meet up locations.",
       tech: "Python, PostgreSQL, SQL Alchemy, Flask, Jinja, HTML, CSS, JavaScript",
       github: "https://github.com/vsvang87/car-meet",
-      video: "",
-      category: "full-stack",
+      video: "https://youtu.be/gfzCajv79zE",
+      category: "Full-Stack",
     },
     {
       id: 2,
@@ -19,8 +19,8 @@ export default {
         "A fully responsive church site with private end user login authentication and CRUD operations. Integrated stripe payment gateway for donations.",
       tech: "Python, PostgreSQL, SQL Alchemy, Flask, Jinja, HTML, CSS",
       github: "https://github.com/vsvang87/HFBC",
-      video: "https://www.youtube.com/watch?v=fDc7I8AsPsY",
-      category: "full-stack",
+      video: "https://youtu.be/Rq9i19EzVXk",
+      category: "Full-Stack",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export default {
       tech: "HTML, CSS, JavaScript",
       site: "https://visaypasswordgenerator.netlify.app/",
       github: "https://github.com/vsvang87/Password-Generator/tree/master",
-      category: "javascript",
+      category: "JavaScript",
     },
     {
       id: 4,
@@ -42,7 +42,18 @@ export default {
       tech: "HTML, CSS, JavaScript",
       site: "https://visayrecipeapp.netlify.app",
       github: "https://github.com/vsvang87/RecipeApp/tree/master",
-      category: "javascript",
+      category: "JavaScript",
+    },
+    {
+      id: 5,
+      name: "Portfolio Site",
+      image: "../image/portfolio_site.jpg",
+      description:
+        "A fully responsive portfolio website to display my projects. Built it with React and styled it with Sass. Implement emailjs to receive email from users straight to my inbox. Added react router dom for single page application and framer motion for page transition.",
+      tech: "React, Sass",
+      site: "",
+      github: "https://github.com/vsvang87/React_Portfolio_Site/tree/master",
+      category: "React",
     },
   ],
 };

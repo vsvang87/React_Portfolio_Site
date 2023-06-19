@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "/image/visay2.jpg";
+import img1 from "/image/visay3.jpg";
 import resume from "../Resume/frontend.pdf";
 import { motion } from "framer-motion";
 
@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <motion.div
       className="hero-container"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.5 } }}
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, X: -100 }}
       // initial={{ width: 0 }}
       // animate={{ width: "100%" }}
       // exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}

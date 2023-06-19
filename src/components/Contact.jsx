@@ -36,9 +36,9 @@ function Contact() {
     <>
       <motion.section
         className="contact-section"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0, transition: { duration: 0.5 } }}
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, X: -100 }}
         // initial={{ width: 0 }}
         // animate={{ width: "100%" }}
         // exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}
