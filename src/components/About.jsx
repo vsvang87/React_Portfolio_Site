@@ -1,5 +1,6 @@
 import React from "react";
 import img from "/image/visay2.jpg";
+
 function About() {
   return (
     <>

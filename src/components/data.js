@@ -51,7 +51,7 @@ export default {
       description:
         "A fully responsive portfolio website to display my projects. Built it with React and styled it with Sass. Implement emailjs to receive email from users straight to my inbox. Added react router dom for single page application and framer motion for page transition.",
       tech: "React, Sass",
-      site: "",
+      site: "https://visaydev.netlify.app",
       github: "https://github.com/vsvang87/React_Portfolio_Site/tree/master",
       category: "React",
     },

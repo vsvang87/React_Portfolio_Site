@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../css/styles.scss";
+import { slide as Menu } from "react-burger-menu";
 
 const Header = () => {
   return (
@@ -33,9 +34,9 @@ const Header = () => {
                 <i class="fa-solid fa-address-book"></i> CONTACT
               </Link>
             </li>
-            <li></li>
           </ul>
         </div>
+
         <div className="line"></div>
       </div>
     </div>

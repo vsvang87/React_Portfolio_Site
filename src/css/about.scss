@@ -29,12 +29,19 @@
       align-items: flex-start;
       margin-top: 3rem;
       gap: 2rem;
+      @include mediaQuery1110px {
+        flex-direction: column;
+      }
       .about-info {
         width: 70%;
         line-height: 1.5rem;
         letter-spacing: 0.05rem;
         font-weight: bold;
         padding: 0 2rem;
+        @include mediaQuery1110px {
+          width: 100%;
+          padding: 0;
+        }
         h2 {
           margin-bottom: 1rem;
           font-family: "Alata", sans-serif;
@@ -45,6 +52,10 @@
       }
       .about-img {
         width: 30%;
+
+        @include mediaQuery800px {
+          width: 100%;
+        }
         img {
           width: 100%;
           border-radius: 10px;
@@ -81,16 +92,17 @@
       .skills-content {
         margin-top: 1rem;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 2rem;
         height: 100%;
         padding: 1rem;
         li {
           color: $mediumGray;
           list-style-type: none;
-
+          font-size: 1.2rem;
           &::marker {
-            content: "✔️";
+            content: "\2713";
+            color: $red;
           }
         }
       }
