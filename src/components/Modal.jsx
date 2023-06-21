@@ -7,47 +7,29 @@ function Modal({ projects }) {
   const toggleModal = () => {
     setModal(!modal);
   };
-  if (modal) {
-    document.body.classList.add("active-modal");
-  } else {
-    document.body.classList.remove("active-modal");
-  }
+
   return (
     <>
-      <button onClick={toggleModal} className="open-btn">
-        Open
-      </button>
-      {modal && (
-        <section className="modal-container">
-          <div className="overlay">
-            <div className="modal-content">
-              {projects.map((item) => {
-                return (
-                  <div className="modal-card" key={item.id}>
-                    <h3>{item.name}</h3>
-                    <div className="modal-inner-content">
-                      <div className="modal-tech-stack">
-                        <h3>Tech Stack:</h3>
-                        <p>{item.tech}</p>
-                      </div>
-                      <div className="modal-project-info">
-                        <p>{item.description}</p>
-                      </div>
-                      <div className="modal-project-img">
-                        <img src={item.image} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+      <div className="modal-container">
+        <button onClick={toggleModal}>Open</button>
 
-              <button onClick={toggleModal} className="close-btn">
-                Close
-              </button>
+        {modal && (
+          <div className="modal">
+            <div className="overlay">
+              <div className="modal-content">
+                <h2>Modal</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Explicabo corporis voluptate odit tempore eligendi aperiam ea
+                  cum illum nesciunt, possimus maiores qui perferendis quasi
+                  laborum, sunt voluptatem mollitia. Facilis, cumque.
+                </p>
+                <button onClick={toggleModal}>Close</button>
+              </div>
             </div>
           </div>
-        </section>
-      )}
+        )}
+      </div>
     </>
   );
 }

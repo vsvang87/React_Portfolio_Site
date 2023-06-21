@@ -1,40 +1,54 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 // import Modal from "./Modal";
 
 const Projects = ({ projects }) => {
+  // set modal
+  const [openModal, setOpenModal] = useState(false);
   // setting state
-  // const [filterProject, setFilterProject] = useState(projects);
+  const [filterProject, setFilterProject] = useState(projects);
+  const [selectCategory, setSelectCategory] = useState("");
+  // const [selectedId, setSelectedId] = useState();
 
-  // filter out projects base on category
-  // const filterByProject = (project) => {
-  //   setSearch(
-  //     projects.filter((project) => {
-  //       return project.category === "javascript";
-  //     })
-  //   );
+  const filterCategory = (filterData) => {
+    if (!selectCategory) {
+      return filterData;
+    }
+    const filterTech = filterData.filter(
+      (project) => project.category.split(" ").indexOf(selectCategory) !== -1
+    );
+    return filterTech;
+  };
+  // handle filter change
+  const handleCategoryChange = (e) => {
+    setSelectCategory(e.target.value);
+  };
+  // handle click modal
+  // const handleModalClick = (e) => {
+  //   const projectId = Number(e.target.id);
+  //   if (projectId === selectedId) {
+  //     setSelectedId("");
+  //   } else {
+  //     setSelectedId(projectId);
+  //   }
   // };
-  //filter project by category, by grabbing the category key from data.js
-  // const filterByCategory = (category) => {
-  //   setFilterProject(
-  //     projects.filter((project) => {
-  //       return project.category === category;
-  //     })
-  //   );
-  // };
-  // Using Set to filter unique values
-  // const categories = Array.from(
-  //   new Set(projects.map((project) => project.category))
-  // );
 
+  useEffect(() => {
+    let filteredData = filterCategory(projects);
+    filteredData = filterCategory(filteredData);
+    setFilterProject(filteredData);
+  }, [selectCategory]);
+
+  // toggle modal
+  // function toggleModal() {
+  //   setOpenModal(!openModal);
+  // }
   return (
     <motion.div
       className="project-container"
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, X: -100 }}
-      // exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}
     >
       <div className="wrapper">
         <div className="project-content">
@@ -42,23 +56,45 @@ const Projects = ({ projects }) => {
             Projects <span className="line"></span>
           </h1>
           <div className="project-inner-content">
-            {/* <ul className="project-links">
-              <li onChange={(e) => filterByCategory(e.target.value)}>
-                {categories.map((category) => {
-                  return (
-                    <a href="" key={category}>
-                      {category}
-                    </a>
-                  );
-                })}
-              </li>
-            </ul> */}
+            <div className="tech-filter">
+              <h4>Filter by Tech:</h4>
+              <select
+                id="tech-input"
+                value={selectCategory}
+                onChange={handleCategoryChange}
+              >
+                <option value="">All</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="React">React</option>
+                <option value="Full-Stack">Full-Stack</option>
+              </select>
+            </div>
+
             <div className="card-container">
-              {projects.map((item) => {
+              {filterProject.map((item, index) => {
                 return (
-                  <div className="project-card active" key={item.id}>
+                  <div className="project-card active" key={index}>
                     <div className="img-div">
+                      {/* <a href="#" onClick={toggleModal} key={index}></a> */}
                       <img src={item.image} alt="" />
+                      {/* {openModal && (
+                        <div className="modal" onClick={handleModalClick}>
+                          <div className="overlay">
+                            <div
+                              className={
+                                selectedId === 1
+                                  ? "active-option"
+                                  : "filter-option"
+                              }
+                              id="1"
+                            >
+                              {item.name}
+
+                              <button onClick={toggleModal}>Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      )} */}
                     </div>
                     <div className="links-container">
                       <h4>{item.name}</h4>
@@ -97,7 +133,6 @@ const Projects = ({ projects }) => {
               })}
             </div>
           </div>
-          {/* <Modal projects={projects} /> */}
         </div>
       </div>
     </motion.div>
