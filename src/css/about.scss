@@ -96,13 +96,19 @@
         gap: 2rem;
         height: 100%;
         padding: 1rem;
-        li {
+        .skills-icon {
           color: $mediumGray;
           list-style-type: none;
-          font-size: 1.2rem;
-          &::marker {
-            content: "\2713";
+          font-size: 0.8rem;
+          place-items: center start;
+          .icon {
+            box-shadow: 5px 5px 20px 5px rgba($color: #000000, $alpha: 0.1);
+            border-radius: 5px;
             color: $red;
+            font-size: 3rem;
+            margin-right: 0.3rem;
+            padding: 0.2rem;
+            margin-bottom: 0.2rem;
           }
         }
       }

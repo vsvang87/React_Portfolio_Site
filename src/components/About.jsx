@@ -1,6 +1,17 @@
 import React from "react";
 import img from "/image/visay2.jpg";
-
+import { AiOutlineProject } from "react-icons/ai";
+import { SiFlask } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { SiJinja } from "react-icons/si";
+import { DiJavascript1 } from "react-icons/di";
+import { DiPython } from "react-icons/di";
+import { AiFillHtml5 } from "react-icons/ai";
+import { DiCss3Full } from "react-icons/di";
+import { FaBootstrap } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { BiCoinStack } from "react-icons/bi";
 function About() {
   return (
     <>
@@ -39,19 +50,52 @@ function About() {
 
             <div className="skills-container">
               <h2>Tech Stack</h2>
-              <ul className="skills-content">
-                <li>HTML</li>
-                <li>Sass</li>
-                <li>Python</li>
-                <li>Flask</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PostgreSQL</li>
-                <li>SQL Alchemy</li>
-                <li>Bootstrap</li>
-                <li>React</li>
-                <li>Jinja</li>
-              </ul>
+              <div className="skills-content">
+                <div className="skills-icon">
+                  <AiFillHtml5 className="icon" />
+                  <p>HTML</p>
+                </div>
+                <div className="skills-icon">
+                  <FaSass className="icon" />
+                  <p>Sass</p>
+                </div>
+                <div className="skills-icon">
+                  <DiPython className="icon" />
+                  <p>Python</p>
+                </div>
+                <div className="skills-icon">
+                  <SiFlask className="icon" />
+                  <p>Flask</p>
+                </div>
+                <div className="skills-icon">
+                  <DiCss3Full className="icon" />
+                  <p>CSS</p>
+                </div>
+                <div className="skills-icon">
+                  <DiJavascript1 className="icon" />
+                  <p>JavaScript</p>
+                </div>
+                <div className="skills-icon">
+                  <SiPostgresql className="icon" />
+                  <p>PostgreSQL</p>
+                </div>
+                <div className="skills-icon">
+                  <BiCoinStack className="icon" />
+                  <p>SQL Alchemy</p>
+                </div>
+                <div className="skills-icon">
+                  <FaBootstrap className="icon" />
+                  <p>Bootstrap</p>
+                </div>
+                <div className="skills-icon">
+                  <FaReact className="icon" />
+                  <p>React</p>
+                </div>
+                <div className="skills-icon">
+                  <SiJinja className="icon" />
+                  <p>Jinja</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
