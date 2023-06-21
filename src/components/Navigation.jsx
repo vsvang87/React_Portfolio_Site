@@ -3,6 +3,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
+import { AiOutlineProject } from "react-icons/ai";
 
 function Navigation({ sidebar }) {
   console.log(sidebar);
@@ -38,7 +39,7 @@ function Navigation({ sidebar }) {
             </li>
             <li>
               <Link to="/project" className="path">
-                <i class="fa-solid fa-diagram-project"></i> PROJECT
+                <AiOutlineProject /> PROJECT
               </Link>
             </li>
             <li>

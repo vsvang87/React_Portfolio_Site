@@ -100,7 +100,6 @@
         margin-top: 1rem;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 2rem;
         height: 100%;
         padding: 1rem;
@@ -110,9 +109,7 @@
         }
         @include mediaQuery670px {
           grid-template-columns: repeat(3, 1fr);
-        }
-        @include mediaQuery450px {
-          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
         }
 
         .skills-icon {
@@ -128,6 +125,9 @@
             margin-right: 0.3rem;
             padding: 0.2rem;
             margin-bottom: 0.2rem;
+            @include mediaQuery450px {
+              font-size: 1.8rem;
+            }
           }
         }
       }

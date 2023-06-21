@@ -25,7 +25,7 @@ function Navlinks() {
         </li>
         <li>
           <Link to="/project">
-            <i class="fa-solid fa-diagram-project"></i> PROJECT
+            <i class="fa-solid fa-file"></i> PROJECT
           </Link>
         </li>
         <li>
