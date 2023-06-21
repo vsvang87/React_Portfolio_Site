@@ -13,6 +13,9 @@
       img {
         width: 20%;
         clip-path: circle();
+        @include mediaQuery800px {
+          width: 50%;
+        }
       }
       h1 {
         color: $offWhite;
