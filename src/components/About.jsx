@@ -56,8 +56,24 @@ function About() {
                   <p>HTML</p>
                 </div>
                 <div className="skills-icon">
+                  <DiCss3Full className="icon" />
+                  <p>CSS</p>
+                </div>
+                <div className="skills-icon">
                   <FaSass className="icon" />
                   <p>Sass</p>
+                </div>
+                <div className="skills-icon">
+                  <FaBootstrap className="icon" />
+                  <p>Bootstrap</p>
+                </div>
+                <div className="skills-icon">
+                  <DiJavascript1 className="icon" />
+                  <p>JavaScript</p>
+                </div>
+                <div className="skills-icon">
+                  <FaReact className="icon" />
+                  <p>React</p>
                 </div>
                 <div className="skills-icon">
                   <DiPython className="icon" />
@@ -67,14 +83,7 @@ function About() {
                   <SiFlask className="icon" />
                   <p>Flask</p>
                 </div>
-                <div className="skills-icon">
-                  <DiCss3Full className="icon" />
-                  <p>CSS</p>
-                </div>
-                <div className="skills-icon">
-                  <DiJavascript1 className="icon" />
-                  <p>JavaScript</p>
-                </div>
+
                 <div className="skills-icon">
                   <SiPostgresql className="icon" />
                   <p>PostgreSQL</p>
@@ -83,14 +92,7 @@ function About() {
                   <BiCoinStack className="icon" />
                   <p>SQL Alchemy</p>
                 </div>
-                <div className="skills-icon">
-                  <FaBootstrap className="icon" />
-                  <p>Bootstrap</p>
-                </div>
-                <div className="skills-icon">
-                  <FaReact className="icon" />
-                  <p>React</p>
-                </div>
+
                 <div className="skills-icon">
                   <SiJinja className="icon" />
                   <p>Jinja</p>

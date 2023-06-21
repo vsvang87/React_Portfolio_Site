@@ -21,7 +21,9 @@
     border-radius: 10px;
     min-height: 95vh;
     padding: 3rem;
-
+    @include mediaQuery550px {
+      padding: 1rem;
+    }
     .project-inner-content {
       margin-top: 3rem;
 

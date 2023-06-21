@@ -11,7 +11,9 @@
     border-radius: 10px;
     background: $offWhite;
     padding: 3rem;
-
+    @include mediaQuery550px {
+      padding: 1rem;
+    }
     h1 {
       @include flexJustifyStart;
       font-family: "Lobster", cursive;
@@ -48,6 +50,11 @@
             margin-bottom: 1rem;
             font-family: "Alata", sans-serif;
           }
+          p {
+            @include mediaQuery550px {
+              font-size: 0.7rem;
+            }
+          }
         }
         .phone {
           background: rgb(255, 241, 241);
@@ -68,7 +75,12 @@
         @include mediaQuery1720px() {
           width: 100%;
         }
-
+        @include mediaQuery800px {
+          padding: 1rem;
+        }
+        @include mediaQuery550px {
+          padding: 0.5rem;
+        }
         form {
           .input-group {
             @include flexAlignStart;

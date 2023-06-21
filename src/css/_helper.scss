@@ -45,3 +45,18 @@ $mediumGray: rgb(136, 136, 136);
     @content;
   }
 }
+@mixin mediaQuery670px {
+  @media (max-width: 670px) {
+    @content;
+  }
+}
+@mixin mediaQuery550px {
+  @media (max-width: 550px) {
+    @content;
+  }
+}
+@mixin mediaQuery450px {
+  @media (max-width: 450px) {
+    @content;
+  }
+}

@@ -10,6 +10,9 @@
     border-radius: 10px;
     background: $offWhite;
     padding: 3rem;
+    @include mediaQuery550px {
+      padding: 1rem;
+    }
 
     h1 {
       @include flexJustifyStart;
@@ -84,23 +87,39 @@
       border-radius: 10px;
       padding: 2rem;
       font-weight: bold;
+      @include mediaQuery800px {
+        padding: 1rem;
+      }
 
       h2 {
         font-family: "Lobster", cursive;
         font-size: 1.8rem;
+        text-align: center;
       }
       .skills-content {
         margin-top: 1rem;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(5, 1fr);
+        // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 2rem;
         height: 100%;
         padding: 1rem;
+        @include mediaQuery800px {
+          grid-template-columns: repeat(4, 1fr);
+          padding: 0.5rem;
+        }
+        @include mediaQuery670px {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @include mediaQuery450px {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
         .skills-icon {
           color: $mediumGray;
           list-style-type: none;
           font-size: 0.8rem;
-          place-items: center start;
+          text-align: center;
           .icon {
             box-shadow: 5px 5px 20px 5px rgba($color: #000000, $alpha: 0.1);
             border-radius: 5px;
