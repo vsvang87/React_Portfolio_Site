@@ -1,7 +1,8 @@
 @use "./helper" as *;
 
 .about-section {
-  min-height: 105vh;
+  min-height: 100vh;
+  padding: 0 0 3rem 0;
   @include flexAlignStart;
   .about-container {
     min-height: 90vh;
@@ -70,12 +71,18 @@
 
         p {
           color: $mediumGray;
-          i {
+          place-content: center;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          .a-icon {
             color: $red;
+            font-size: 2.5rem;
             box-shadow: 5px 5px 15px 0 rgba($color: #000000, $alpha: 0.1);
             border-radius: 5px;
             padding: 0.5rem;
-            margin-right: 1rem;
+            margin: 0 1rem 0 0;
           }
         }
       }
@@ -117,6 +124,11 @@
           list-style-type: none;
           font-size: 0.8rem;
           text-align: center;
+          @include mediaQuery450px {
+            p {
+              font-size: 0.6rem;
+            }
+          }
           .icon {
             box-shadow: 5px 5px 20px 5px rgba($color: #000000, $alpha: 0.1);
             border-radius: 5px;
@@ -125,9 +137,6 @@
             margin-right: 0.3rem;
             padding: 0.2rem;
             margin-bottom: 0.2rem;
-            @include mediaQuery450px {
-              font-size: 1.8rem;
-            }
           }
         }
       }

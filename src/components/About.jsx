@@ -1,6 +1,5 @@
 import React from "react";
 import img from "/image/visay2.jpg";
-import { AiOutlineProject } from "react-icons/ai";
 import { SiFlask } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 import { SiJinja } from "react-icons/si";
@@ -12,6 +11,10 @@ import { FaBootstrap } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { BiCoinStack } from "react-icons/bi";
+import { MdFamilyRestroom } from "react-icons/md";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { BsEnvelopeAt } from "react-icons/bs";
+import { AiOutlinePhone } from "react-icons/ai";
 function About() {
   return (
     <>
@@ -28,21 +31,31 @@ function About() {
               <div className="about-info about-col">
                 <h2>Who Am I?</h2>
                 <p>
-                  I'm a Software Developer with an eye for responsive UI design.
-                  I enjoy turning ideas into beautiful and intuitive designs.
+                  I'm a Software Developer base off Anderson, SC. Prior to code
+                  I worked as a CNC Machinist for 5+ years working with low
+                  level code. With my eagerness to learn and grow at my
+                  workplace I found code.
                 </p>
+
                 <p>
-                  My aim is to bring across your message and identity in the
-                  most creative way.
+                  I enjoy turning ideas into beautiful and intuitive designs. My
+                  aim is to bring across your message and identity in the most
+                  creative way.
                 </p>
 
                 <div className="contact-container">
                   <h2>Personal Info</h2>
                   <p>
-                    <i class="fa-solid fa-phone"></i> 414-243-4862
+                    <AiOutlinePhone className="a-icon" /> 414-243-4862
                   </p>
                   <p>
-                    <i class="fa-solid fa-envelope"></i> vsvang@gmail.com
+                    <BsEnvelopeAt className="a-icon" /> vsvang@gmail.com
+                  </p>
+                  <p>
+                    <HiOutlineLocationMarker className="a-icon" /> Anderson, SC
+                  </p>
+                  <p>
+                    <MdFamilyRestroom className="a-icon" /> Married
                   </p>
                 </div>
               </div>

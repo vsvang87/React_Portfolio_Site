@@ -55,5 +55,16 @@ export default {
       github: "https://github.com/vsvang87/React_Portfolio_Site/tree/master",
       category: "React",
     },
+    {
+      id: 6,
+      name: "Search Movie",
+      image: "../image/movieapp.jpg",
+      description:
+        "A movie web app that allows you to search any movies of your choice.",
+      tech: "React, Sass",
+      site: "https://visaysearchmovie.netlify.app/",
+      github: "https://github.com/vsvang87/search_movie_app/tree/master",
+      category: "React",
+    },
   ],
 };

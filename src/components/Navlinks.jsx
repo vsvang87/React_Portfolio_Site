@@ -7,7 +7,7 @@ function Navlinks() {
       <div className="logo-div">
         <h3>
           <Link to="/" className="logo">
-            .VANG
+            V.VANG
           </Link>
         </h3>
       </div>
@@ -25,7 +25,7 @@ function Navlinks() {
         </li>
         <li>
           <Link to="/project">
-            <i class="fa-solid fa-file"></i> PROJECT
+            <i class="fa-solid fa-file"></i> PROJECTS
           </Link>
         </li>
         <li>

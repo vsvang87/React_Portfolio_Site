@@ -2,6 +2,7 @@
 
 .project-container {
   min-height: 100vh;
+  padding: 0 0 3rem 0;
   @include flexCenter;
   margin-top: 1.5rem;
   h1 {
