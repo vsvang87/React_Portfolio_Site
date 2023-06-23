@@ -42,7 +42,6 @@
           border-radius: 10px;
           box-shadow: 5px 5px 20px 0 rgba($color: #000000, $alpha: 0.1);
           min-height: 146px;
-          margin-bottom: 1.5rem;
           padding: 2rem;
           font-weight: bold;
 
@@ -61,6 +60,7 @@
         }
         .email {
           background: rgb(238, 251, 255);
+          margin: 2rem 0;
         }
         .location {
           background: rgb(251, 241, 255);
@@ -70,7 +70,7 @@
         width: 70%;
         box-shadow: 5px 5px 20px 0 rgba($color: #000000, $alpha: 0.1);
         border-radius: 10px;
-        height: 53vh;
+        min-height: 47vh;
         padding: 3rem;
         @include mediaQuery1720px() {
           width: 100%;

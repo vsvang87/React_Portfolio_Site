@@ -20,6 +20,9 @@
       h1 {
         color: $offWhite;
         font-size: 3.5rem;
+        @include mediaQuery450px {
+          text-align: center;
+        }
       }
       p {
         margin: 0.8rem 0 0 0;
