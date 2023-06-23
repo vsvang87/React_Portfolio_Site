@@ -31,10 +31,10 @@ function About() {
               <div className="about-info about-col">
                 <h2>Who Am I?</h2>
                 <p>
-                  I'm a Software Developer base off Anderson, SC. Prior to code
-                  I worked as a CNC Machinist for 5+ years working with low
-                  level code. With my eagerness to learn and grow at my
-                  workplace I found code.
+                  I'm a Software Developer base in Anderson, SC. Prior to
+                  software development I worked as a CNC Machinist for 5+ years
+                  working with low level code. With my eagerness to learn and
+                  grow at my workplace I found code.
                 </p>
 
                 <p>
@@ -55,7 +55,7 @@ function About() {
                     <HiOutlineLocationMarker className="a-icon" /> Anderson, SC
                   </p>
                   <p>
-                    <MdFamilyRestroom className="a-icon" /> Married
+                    <MdFamilyRestroom className="a-icon" /> Family Man
                   </p>
                 </div>
               </div>

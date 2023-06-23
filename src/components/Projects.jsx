@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-// import Modal from "./Modal";
+import Modal from "./Modal";
 
 const Projects = ({ projects }) => {
   // set modal
@@ -24,14 +24,14 @@ const Projects = ({ projects }) => {
     setSelectCategory(e.target.value);
   };
   // handle click modal
-  // const handleModalClick = (e) => {
-  //   const projectId = Number(e.target.id);
-  //   if (projectId === selectedId) {
-  //     setSelectedId("");
-  //   } else {
-  //     setSelectedId(projectId);
-  //   }
-  // };
+  const handleModalClick = (e) => {
+    const projectId = Number(e.target.id);
+    if (projectId === selectedId) {
+      setSelectedId("");
+    } else {
+      setSelectedId(projectId);
+    }
+  };
 
   useEffect(() => {
     let filteredData = filterCategory(projects);
@@ -39,10 +39,6 @@ const Projects = ({ projects }) => {
     setFilterProject(filteredData);
   }, [selectCategory]);
 
-  // toggle modal
-  // function toggleModal() {
-  //   setOpenModal(!openModal);
-  // }
   return (
     <motion.div
       className="project-container"
@@ -75,26 +71,7 @@ const Projects = ({ projects }) => {
                 return (
                   <div className="project-card active" key={index}>
                     <div className="img-div">
-                      {/* <a href="#" onClick={toggleModal} key={index}></a> */}
                       <img src={item.image} alt="" />
-                      {/* {openModal && (
-                        <div className="modal" onClick={handleModalClick}>
-                          <div className="overlay">
-                            <div
-                              className={
-                                selectedId === 1
-                                  ? "active-option"
-                                  : "filter-option"
-                              }
-                              id="1"
-                            >
-                              {item.name}
-
-                              <button onClick={toggleModal}>Close</button>
-                            </div>
-                          </div>
-                        </div>
-                      )} */}
                     </div>
                     <div className="links-container">
                       <h4>{item.name}</h4>
