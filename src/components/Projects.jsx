@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Modal from "./Modal";
 
 const Projects = ({ projects }) => {
-  // set modal
-  const [openModal, setOpenModal] = useState(false);
   // setting state
   const [filterProject, setFilterProject] = useState(projects);
   const [selectCategory, setSelectCategory] = useState("");
@@ -23,15 +20,6 @@ const Projects = ({ projects }) => {
   const handleCategoryChange = (e) => {
     setSelectCategory(e.target.value);
   };
-  // handle click modal
-  const handleModalClick = (e) => {
-    const projectId = Number(e.target.id);
-    if (projectId === selectedId) {
-      setSelectedId("");
-    } else {
-      setSelectedId(projectId);
-    }
-  };
 
   useEffect(() => {
     let filteredData = filterCategory(projects);
@@ -42,9 +30,9 @@ const Projects = ({ projects }) => {
   return (
     <motion.div
       className="project-container"
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, X: -100 }}
+      initial={{ x: "-100vw" }}
+      animate={{ x: 0 }}
+      transition={{ type: "spring", duration: 1, bounce: 0.1 }}
     >
       <div className="wrapper">
         <div className="project-content">
@@ -75,7 +63,10 @@ const Projects = ({ projects }) => {
                     </div>
                     <div className="links-container">
                       <h4>{item.name}</h4>
-
+                      <p>
+                        <small>{item.tech}</small>
+                      </p>
+                      <p>{item.description}</p>
                       <div className="links">
                         <div className="video link-col">
                           {item.video ? (

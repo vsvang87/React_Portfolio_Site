@@ -16,7 +16,7 @@ export default {
       name: "HFBC Church",
       image: "../image/church.png",
       description:
-        "A fully responsive church site with private end user login authentication and CRUD operations. Integrated stripe payment gateway for donations.",
+        "A fully responsive church site with private end user login authentication and CRUD operations. Integrate with stripe payment gateway for donations.",
       tech: "Python, PostgreSQL, SQL Alchemy, Flask, Jinja, HTML, CSS",
       github: "https://github.com/vsvang87/HFBC",
       video: "https://youtu.be/Rq9i19EzVXk",

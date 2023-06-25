@@ -7,12 +7,12 @@ const Hero = () => {
   return (
     <motion.div
       className="hero-container"
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, X: -100 }}
-      // initial={{ width: 0 }}
-      // animate={{ width: "100%" }}
-      // exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}
+      // initial={{ opacity: 0, x: 100 }}
+      // animate={{ opacity: 1, x: 0 }}
+      // exit={{ opacity: 0, X: -100 }}
+      initial={{ x: "-100vw" }}
+      animate={{ x: 0 }}
+      transition={{ type: "spring", duration: 1, bounce: 0.1 }}
     >
       <div className="wrapper">
         <div className="hero-content">

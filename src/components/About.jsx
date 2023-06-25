@@ -15,10 +15,19 @@ import { MdFamilyRestroom } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsEnvelopeAt } from "react-icons/bs";
 import { AiOutlinePhone } from "react-icons/ai";
+import { motion } from "framer-motion";
 function About() {
   return (
     <>
-      <section className="about-section">
+      <motion.section
+        className="about-section"
+        // initial={{ opacity: 0, x: 100 }}
+        // animate={{ opacity: 1, x: 0 }}
+        // exit={{ opacity: 0, X: -100 }}
+        initial={{ x: "-100vw" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", duration: 1, bounce: 0.1 }}
+      >
         <div className="wrapper">
           <div className="about-container">
             <h1>
@@ -114,7 +123,7 @@ function About() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }
