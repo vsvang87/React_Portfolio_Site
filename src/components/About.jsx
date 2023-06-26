@@ -21,9 +21,6 @@ function About() {
     <>
       <motion.section
         className="about-section"
-        // initial={{ opacity: 0, x: 100 }}
-        // animate={{ opacity: 1, x: 0 }}
-        // exit={{ opacity: 0, X: -100 }}
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
         transition={{ type: "spring", duration: 1, bounce: 0.1 }}
@@ -40,14 +37,15 @@ function About() {
               <div className="about-info about-col">
                 <h2>Who Am I?</h2>
                 <p>
-                  I'm a Software Developer base in Anderson, SC. Prior to
-                  software development I worked as a CNC Machinist for 5+ years
-                  working with low level code. With my eagerness to learn and
-                  grow at my workplace I found code.
+                  I am a Software Developer base in Anderson, SC. Prior to
+                  software development I worked as a cnc machinist for 5+ years
+                  machining parts to customer's specs. With my eagerness to
+                  learn and grow at my workplace I found code.
                 </p>
 
                 <p>
-                  I enjoy turning ideas into beautiful and intuitive designs. My
+                  I am passionate at what I do and love working with others. I
+                  enjoy turning ideas into beautiful and intuitive designs. My
                   aim is to bring across your message and identity in the most
                   creative way.
                 </p>
