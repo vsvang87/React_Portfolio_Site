@@ -52,6 +52,7 @@
         }
         p {
           color: $mediumGray;
+          padding-bottom: 1rem;
         }
       }
       .about-img {
@@ -67,22 +68,30 @@
       }
 
       .contact-container {
-        margin-top: 1rem;
+        .contact-grid-content {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          @include mediaQuery800px {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          p {
+            color: $mediumGray;
+            place-content: center;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
 
-        p {
-          color: $mediumGray;
-          place-content: center;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-
-          .a-icon {
-            color: $red;
-            font-size: 2.5rem;
-            box-shadow: 5px 5px 15px 0 rgba($color: #000000, $alpha: 0.1);
-            border-radius: 5px;
-            padding: 0.5rem;
-            margin: 0 1rem 0 0;
+            .a-icon {
+              color: $red;
+              font-size: 2.5rem;
+              box-shadow: 5px 5px 15px 0 rgba($color: #000000, $alpha: 0.1);
+              border-radius: 5px;
+              padding: 0.5rem;
+              margin: 0 1rem 0 0;
+            }
           }
         }
       }

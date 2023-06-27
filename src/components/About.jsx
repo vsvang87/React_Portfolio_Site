@@ -37,33 +37,44 @@ function About() {
               <div className="about-info about-col">
                 <h2>Who Am I?</h2>
                 <p>
-                  I am a Software Developer base in Anderson, SC. Prior to
+                  I'm a Software Developer base in Anderson, SC. Prior to
                   software development I worked as a cnc machinist for 5+ years
-                  machining parts to customer's specs. With my eagerness to
-                  learn and grow at my workplace I found code.
+                  machining parts to customer's specifications. With my
+                  eagerness to learn and grow at my workplace I found code.
+                </p>
+                <p>
+                  After console logging my first "Hello World", I was hooked and
+                  decided to embarked on a self-taught journey by purchasing
+                  books like "Eloquent JavaScript" and take online courses like
+                  freecodecamp, scrimba and udemy while working full-time to
+                  provide for my family. I enjoy learning, problem-solving,
+                  building, and bringing many ideas to life.
                 </p>
 
                 <p>
-                  I am passionate at what I do and love working with others. I
-                  enjoy turning ideas into beautiful and intuitive designs. My
-                  aim is to bring across your message and identity in the most
-                  creative way.
+                  I am a recent bootcamp grad and am seeking a role in Frontend
+                  Development. I enjoy turning ideas into beautiful and
+                  intuitive designs. My aim is to bring across your message and
+                  identity in the most creative way.
                 </p>
 
                 <div className="contact-container">
                   <h2>Personal Info</h2>
-                  <p>
-                    <AiOutlinePhone className="a-icon" /> 414-243-4862
-                  </p>
-                  <p>
-                    <BsEnvelopeAt className="a-icon" /> vsvang@gmail.com
-                  </p>
-                  <p>
-                    <HiOutlineLocationMarker className="a-icon" /> Anderson, SC
-                  </p>
-                  <p>
-                    <MdFamilyRestroom className="a-icon" /> Family Man
-                  </p>
+                  <div className="contact-grid-content">
+                    <p>
+                      <AiOutlinePhone className="a-icon" /> 414-243-4862
+                    </p>
+                    <p>
+                      <HiOutlineLocationMarker className="a-icon" /> Anderson,
+                      SC
+                    </p>
+                    <p>
+                      <BsEnvelopeAt className="a-icon" /> vsvang@gmail.com
+                    </p>
+                    <p>
+                      <MdFamilyRestroom className="a-icon" /> Family Man
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
