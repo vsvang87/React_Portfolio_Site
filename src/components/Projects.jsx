@@ -63,10 +63,7 @@ const Projects = ({ projects }) => {
                     </div>
                     <div className="links-container">
                       <h4>{item.name}</h4>
-                      <p>
-                        <small>{item.tech}</small>
-                      </p>
-                      <p>{item.description}</p>
+
                       <div className="links">
                         <div className="video link-col">
                           {item.video ? (

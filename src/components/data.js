@@ -13,14 +13,14 @@ export default {
     },
     {
       id: 2,
-      name: "HFBC Church",
-      image: "../image/church.png",
+      name: "Hmong First Baptist Church",
+      image: "../image/church1.jpg",
       description:
         "A fully responsive church site with private end user login authentication and CRUD operations. Integrate with stripe payment gateway for donations.",
       tech: "Python, PostgreSQL, SQL Alchemy, Flask, Jinja, HTML, CSS",
-      github: "https://github.com/vsvang87/HFBC",
-      video: "https://youtu.be/Rq9i19EzVXk",
-      category: "Full-Stack",
+      site: "https://hfbc.netlify.app/",
+      github: "https://github.com/vsvang87/hfbc_church",
+      category: "React",
     },
     {
       id: 3,

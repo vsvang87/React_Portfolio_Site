@@ -2,28 +2,34 @@ import { useState } from "react";
 
 function Modal({ projects }) {
   console.log(projects);
-
+  const [projectModal, setProjectModal] = useState(projects);
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
     setModal(!modal);
   };
 
+  const handleModalChange = (e) => {
+    setProjectModal(e.target.value);
+  };
+
   return (
     <>
       <div className="modal-container">
-        <button onClick={toggleModal}>Open</button>
+        <button onClick={toggleModal} onChange={handleModalChange}>
+          Open
+        </button>
 
         {modal && (
           <div className="modal">
             <div className="overlay">
               <div className="modal-content">
-                <h2>Modal</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Explicabo corporis voluptate odit tempore eligendi aperiam ea
-                  cum illum nesciunt, possimus maiores qui perferendis quasi
-                  laborum, sunt voluptatem mollitia. Facilis, cumque.
-                </p>
+                {projectModal.map((pop) => {
+                  return (
+                    <div>
+                      <p>{pop.tech}</p>
+                    </div>
+                  );
+                })}
                 <button onClick={toggleModal}>Close</button>
               </div>
             </div>

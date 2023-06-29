@@ -47,15 +47,16 @@ function About() {
                   decided to embarked on a self-taught journey by purchasing
                   books like "Eloquent JavaScript" and take online courses like
                   freecodecamp, scrimba and udemy while working full-time to
-                  provide for my family. I enjoy learning, problem-solving,
+                  support my family. I enjoy learning, problem-solving,
                   building, and bringing many ideas to life.
                 </p>
 
                 <p>
-                  I am a recent bootcamp grad and am seeking a role in Frontend
-                  Development. I enjoy turning ideas into beautiful and
-                  intuitive designs. My aim is to bring across your message and
-                  identity in the most creative way.
+                  I've recently graduated from Hackbright Academy(coding
+                  bootcamp) and am seeking a role in Frontend Development. I
+                  enjoy turning ideas into beautiful and intuitive designs. My
+                  aim is to bring across your message and identity in the most
+                  creative way.
                 </p>
 
                 <div className="contact-container">
