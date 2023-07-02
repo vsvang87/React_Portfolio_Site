@@ -15,6 +15,7 @@ import { MdFamilyRestroom } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsEnvelopeAt } from "react-icons/bs";
 import { AiOutlinePhone } from "react-icons/ai";
+import { BsGit } from "react-icons/bs";
 import { motion } from "framer-motion";
 function About() {
   return (
@@ -123,6 +124,10 @@ function About() {
                 <div className="skills-icon">
                   <BiCoinStack className="icon" />
                   <p>SQL Alchemy</p>
+                </div>
+                <div className="skills-icon">
+                  <BsGit className="icon" />
+                  <p>Git</p>
                 </div>
 
                 <div className="skills-icon">

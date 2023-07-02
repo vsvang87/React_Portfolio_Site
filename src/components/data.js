@@ -66,5 +66,15 @@ export default {
       github: "https://github.com/vsvang87/search_movie_app/tree/master",
       category: "React",
     },
+    {
+      id: 7,
+      name: "Nike Clone Site",
+      image: "../image/nikeclone.jpg",
+      description: "Replicate the nike site as close to it as possible.",
+      tech: "HTML, Sass",
+      site: "https://visaynikeclone.netlify.app/",
+      github: "https://github.com/vsvang87/nike_clone/tree/master",
+      category: "LandingPage",
+    },
   ],
 };
