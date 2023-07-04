@@ -46,7 +46,7 @@ function About() {
                 <p>
                   After console logging my first "Hello World", I was hooked and
                   decided to embarked on a self-taught journey by purchasing
-                  books like "Eloquent JavaScript" and take online courses like
+                  books like "Eloquent JavaScript" and took online courses like
                   freecodecamp, scrimba and udemy while working full-time to
                   support my family. I enjoy learning, problem-solving,
                   building, and bringing many ideas to life.
