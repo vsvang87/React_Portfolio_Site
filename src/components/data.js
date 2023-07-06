@@ -5,7 +5,7 @@ export default {
       name: "Car Meet-Up",
       image: "../image/car-meet.png",
       description:
-        "A responsive web app for car enthusiasts to find or host their own events in their location. Has user login authentication and CRUD operations. Implement Cloudinary API to upload pictures and Google Maps to update and display markers on meet up locations.",
+        "A flask application for car enthusiasts to find or host their own events. Has user login authentication and CRUD operations. Implemented Cloudinary API to upload pictures and Google Maps to update and display markers on meet up locations.",
       tech: "Python, PostgreSQL, SQL Alchemy, Flask, Jinja, HTML, CSS, JavaScript",
       github: "https://github.com/vsvang87/car-meet",
       video: "https://youtu.be/gfzCajv79zE",
@@ -16,7 +16,7 @@ export default {
       name: "Hmong First Baptist Church",
       image: "../image/church1.jpg",
       description:
-        "A responsive website for my church to display ministries and worship hours. Integrate it with stripe payment gateway for donations.",
+        "A responsive website for my church to display ministries and worship hours. Integrated it with stripe payment gateway for donations.",
       tech: "React, Sass, Stripe",
       site: "https://hfbc.netlify.app/",
       github: "https://github.com/vsvang87/hfbc_church",
@@ -26,8 +26,7 @@ export default {
       id: 3,
       name: "Password Generator",
       image: "../image/passwordgenerator.png",
-      description:
-        "An app that will generate a random password for you. Allows user to set character length and include uppercase, lowercase, symbol, or number in their password. Also added click to paste on password for easy copy and paste.",
+      description: "An app that will generate a random password for you.",
       tech: "HTML, CSS, JavaScript",
       site: "https://visaypasswordgenerator.netlify.app/",
       github: "https://github.com/vsvang87/Password-Generator/tree/master",
@@ -38,7 +37,7 @@ export default {
       name: "Recipe Finder",
       image: "../image/recipe.png",
       description:
-        "A recipe app that utilizes third party API to fetch and display using JavaScript map and template string to render HTML elements.",
+        "Don't know what to cook, use this app to help you find a recipe.",
       tech: "HTML, CSS, JavaScript",
       site: "https://visayrecipeapp.netlify.app",
       github: "https://github.com/vsvang87/RecipeApp/tree/master",
@@ -49,7 +48,7 @@ export default {
       name: "Portfolio Site",
       image: "../image/portfolio_site.jpg",
       description:
-        "A portfolio website to display my projects. Built it with React and styled it with Sass. Implement emailjs to receive email from users straight to my inbox. Added react router dom for single page application and framer motion for page transition.",
+        "Portfolio website to display my projects. Structured it with React components and styled it with Sass. Implemented emailjs to receive email from users straight to my inbox. Added react router dom for single page application and framer motion for page transition.",
       tech: "React, Sass",
       site: "https://visaydev.netlify.app",
       github: "https://github.com/vsvang87/React_Portfolio_Site/tree/master",
@@ -60,7 +59,7 @@ export default {
       name: "Search Movie",
       image: "../image/movieapp.jpg",
       description:
-        "A movie web app that allows you to search any movies of your choice.",
+        "Movie web app that allows you to search any movie of your choice.",
       tech: "React, Sass",
       site: "https://visaysearchmovie.netlify.app/",
       github: "https://github.com/vsvang87/search_movie_app/tree/master",
@@ -70,7 +69,7 @@ export default {
       id: 7,
       name: "Nike Clone Site",
       image: "../image/nikeclone.jpg",
-      description: "Re-created Nike website.",
+      description: "Re-created Nike website. Does not have functionality.",
       tech: "HTML, Sass",
       site: "https://visaynikeclone.netlify.app/",
       github: "https://github.com/vsvang87/nike_clone/tree/master",
@@ -80,7 +79,7 @@ export default {
       id: 8,
       name: "T-Mobile Clone Site",
       image: "../image/t-mobile-clone.jpg",
-      description: "Re-created T-Mobile site.",
+      description: "Re-created T-Mobile website. Does not have functionality.",
       tech: "HTML, Sass",
       site: "https://visaytmobileclone.netlify.app/",
       github: "https://github.com/vsvang87/t-mobile_clone/tree/master",

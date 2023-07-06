@@ -36,12 +36,9 @@ function Contact() {
     <>
       <motion.section
         className="contact-section"
-        // initial={{ opacity: 0, x: 100 }}
-        // animate={{ opacity: 1, x: 0 }}
-        // exit={{ opacity: 0, X: -100 }}
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
-        transition={{ type: "spring", duration: 1, bounce: 0.1 }}
+        transition={{ type: "spring", duration: 1.2, bounce: 0.0 }}
       >
         <div className="wrapper">
           <div className="contact-container">

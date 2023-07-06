@@ -32,7 +32,7 @@ const Projects = ({ projects }) => {
       className="project-container"
       initial={{ x: "-100vw" }}
       animate={{ x: 0 }}
-      transition={{ type: "spring", duration: 1, bounce: 0.1 }}
+      transition={{ type: "spring", duration: 1.2, bounce: 0.0 }}
     >
       <div className="wrapper">
         <div className="project-content">
@@ -64,7 +64,10 @@ const Projects = ({ projects }) => {
                     </div>
                     <div className="links-container">
                       <h4>{item.name}</h4>
-
+                      <p>
+                        <small>{item.tech}</small>
+                      </p>
+                      <p>{item.description}</p>
                       <div className="links">
                         <div className="video link-col">
                           {item.video ? (

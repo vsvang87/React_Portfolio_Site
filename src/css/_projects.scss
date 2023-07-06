@@ -61,7 +61,7 @@
       }
       .card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         gap: 2rem;
         position: relative;
         @include mediaQuery550px {
@@ -80,9 +80,9 @@
             }
             img {
               width: 100%;
-              object-fit: fill;
-              min-height: 180px;
-              max-height: 250px;
+              object-fit: cover;
+              min-height: 350px;
+              max-height: 450px;
               border-radius: 10px;
             }
           }

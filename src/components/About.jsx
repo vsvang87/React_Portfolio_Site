@@ -24,7 +24,7 @@ function About() {
         className="about-section"
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
-        transition={{ type: "spring", duration: 1, bounce: 0.1 }}
+        transition={{ type: "spring", duration: 1.2, bounce: 0.0 }}
       >
         <div className="wrapper">
           <div className="about-container">
