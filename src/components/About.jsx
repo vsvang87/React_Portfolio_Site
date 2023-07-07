@@ -1,5 +1,6 @@
 import React from "react";
-import img from "/image/visay2.jpg";
+import img from "/image/coder.svg";
+import img2 from "/image/secure.svg";
 import { SiFlask } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 import { SiJinja } from "react-icons/si";

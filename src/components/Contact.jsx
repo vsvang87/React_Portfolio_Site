@@ -49,8 +49,8 @@ function Contact() {
             <div className="contact-content">
               <div className="contact-info contact-col">
                 <div className="card phone">
-                  <h3>Phone:</h3>
-                  <p>414-243-4862</p>
+                  <h3>Location:</h3>
+                  <p>Anderson, SC</p>
                 </div>
                 <div className="card email">
                   <h3>Email:</h3>

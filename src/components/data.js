@@ -45,17 +45,6 @@ export default {
     },
     {
       id: 5,
-      name: "Portfolio Site",
-      image: "../image/portfolio_site.jpg",
-      description:
-        "Portfolio website to display my projects. Structured it with React components and styled it with Sass. Implemented emailjs to receive email from users straight to my inbox. Added react router dom for single page application and framer motion for page transition.",
-      tech: "React, Sass",
-      site: "https://visaydev.netlify.app",
-      github: "https://github.com/vsvang87/React_Portfolio_Site/tree/master",
-      category: "React",
-    },
-    {
-      id: 6,
       name: "Search Movie",
       image: "../image/movieapp.jpg",
       description:
@@ -66,20 +55,20 @@ export default {
       category: "React",
     },
     {
-      id: 7,
+      id: 6,
       name: "Nike Clone Site",
       image: "../image/nikeclone.jpg",
-      description: "Re-created Nike website. Does not have functionality.",
+      description: "Re-created Nike website.",
       tech: "HTML, Sass",
       site: "https://visaynikeclone.netlify.app/",
       github: "https://github.com/vsvang87/nike_clone/tree/master",
       category: "LandingPage",
     },
     {
-      id: 8,
+      id: 7,
       name: "T-Mobile Clone Site",
       image: "../image/t-mobile-clone.jpg",
-      description: "Re-created T-Mobile website. Does not have functionality.",
+      description: "Re-created T-Mobile website.",
       tech: "HTML, Sass",
       site: "https://visaytmobileclone.netlify.app/",
       github: "https://github.com/vsvang87/t-mobile_clone/tree/master",
