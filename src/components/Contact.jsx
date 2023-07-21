@@ -50,7 +50,7 @@ function Contact() {
               <div className="contact-info contact-col">
                 <div className="card phone">
                   <h3>Location:</h3>
-                  <p>Anderson, SC</p>
+                  <p>Anderson, SC (Relocation / Remote)</p>
                 </div>
                 <div className="card email">
                   <h3>Email:</h3>
