@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "/image/visay3.jpg";
-import resume from "../Resume/fullstack.pdf";
+import resume from "../Resume/myresume.pdf";
 import { motion } from "framer-motion";
 
 const Hero = () => {

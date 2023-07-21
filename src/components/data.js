@@ -26,7 +26,8 @@ export default {
       id: 3,
       name: "Password Generator",
       image: "../image/passwordgenerator.png",
-      description: "An app that will generate a random password for you.",
+      description:
+        "Don't know what to use as your password. Use this app to generate a random password for you.",
       tech: "HTML, CSS, JavaScript",
       site: "https://visaypasswordgenerator.netlify.app/",
       github: "https://github.com/vsvang87/Password-Generator/tree/master",
