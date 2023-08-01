@@ -12,12 +12,12 @@ import { FaBootstrap } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { BiCoinStack } from "react-icons/bi";
-import { MdFamilyRestroom } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsEnvelopeAt } from "react-icons/bs";
 import { AiOutlinePhone } from "react-icons/ai";
 import { BsGit } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { LuSoup } from "react-icons/lu";
 function About() {
   return (
     <>
@@ -68,7 +68,7 @@ function About() {
                       <BsEnvelopeAt className="a-icon" /> vsvang@gmail.com
                     </p>
                     <p>
-                      <MdFamilyRestroom className="a-icon" /> Family Man
+                      <LuSoup className="a-icon" /> Pho
                     </p>
                   </div>
                 </div>

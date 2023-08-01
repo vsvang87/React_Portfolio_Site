@@ -16,7 +16,7 @@ export default {
       name: "Hmong First Baptist Church",
       image: "../image/church1.jpg",
       description:
-        "A responsive website for my church to display ministries and worship hours. Integrated it with stripe payment gateway for donations.",
+        "A single page responsive website for my church to display ministries and worship hours. Integrated it with stripe payment gateway for donations.",
       tech: "React, Sass, Stripe",
       site: "https://hfbc.netlify.app/",
       github: "https://github.com/vsvang87/hfbc_church",
@@ -27,7 +27,7 @@ export default {
       name: "Password Generator",
       image: "../image/passwordgenerator.png",
       description:
-        "Don't know what to use as your password. Use this app to generate a random password for you.",
+        "Need help with a password? Use this app to generate a random password for you.",
       tech: "HTML, CSS, JavaScript",
       site: "https://visaypasswordgenerator.netlify.app/",
       github: "https://github.com/vsvang87/Password-Generator/tree/master",
@@ -38,7 +38,7 @@ export default {
       name: "Recipe Finder",
       image: "../image/recipe.png",
       description:
-        "Don't know what to cook, use this app to help you find a recipe.",
+        "If you don't have any idea on what to cook, use this app to help you find a recipe.",
       tech: "HTML, CSS, JavaScript",
       site: "https://visayrecipeapp.netlify.app",
       github: "https://github.com/vsvang87/RecipeApp/tree/master",
@@ -49,7 +49,7 @@ export default {
       name: "Search Movie",
       image: "../image/movieapp.jpg",
       description:
-        "Movie web app that allows you to search any movie of your choice.",
+        "Movie web app that allows you to search any movie of your choice. It'll display the year, rating and a brief description of that movie.",
       tech: "React, Sass",
       site: "https://visaysearchmovie.netlify.app/",
       github: "https://github.com/vsvang87/search_movie_app/tree/master",

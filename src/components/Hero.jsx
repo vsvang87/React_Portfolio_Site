@@ -17,6 +17,7 @@ const Hero = () => {
             <img src={img1} alt="" />
             <h1>Visay Vang</h1>
             <p>Frontend Developer</p>
+
             <p>Available for work.</p>
             <div className="social-links">
               <div className="github">
