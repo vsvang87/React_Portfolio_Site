@@ -41,7 +41,7 @@ const Projects = ({ projects }) => {
           </h1>
           <div className="project-inner-content">
             <div className="tech-filter">
-              <h4>Filter by Tech:</h4>
+              <h4>Filter by Projects:</h4>
               <select
                 id="tech-input"
                 value={selectCategory}

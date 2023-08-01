@@ -39,26 +39,19 @@ function About() {
               <div className="about-info about-col">
                 <h2>Who Am I?</h2>
                 <p>
-                  I'm a Software Developer base in Anderson, SC. Prior to
-                  software development I worked as a cnc machinist for 5+ years
-                  machining parts to customer's specifications. With my
-                  eagerness to learn and grow at my workplace I found code.
-                </p>
-                <p>
-                  After console logging my first "Hello World", I was hooked and
-                  decided to embarked on a self-taught journey by purchasing
-                  books like "Eloquent JavaScript" and took online courses like
-                  freecodecamp, scrimba and udemy while working full-time to
-                  support my family. I enjoy learning, problem-solving,
-                  building, and bringing many ideas to life.
+                  I'm a Software Developer based in Anderson, SC. I've developed
+                  full-stack and frontend projects free for family members and
+                  local churches. I love helping others and making an impact
+                  where ever I can.
                 </p>
 
                 <p>
-                  I've recently graduated from Hackbright Academy(coding
-                  bootcamp) and am seeking a role in Frontend Development. I
-                  enjoy turning ideas into beautiful and intuitive designs. My
-                  aim is to bring across your message and identity in the most
-                  creative way.
+                  Frontend development is my strong suit but I am experienced
+                  working in a full-stack environment. I regularly work with
+                  JavaScript and React. I am always eager to learn new things
+                  and grow as a developer. Outside from code I enjoy spending
+                  time with my family and hanging out with friends. I also enjoy
+                  playing soccer and basketball.
                 </p>
 
                 <div className="contact-container">
