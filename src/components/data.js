@@ -96,7 +96,7 @@ export default {
       category: "HTMLEmail",
     },
     {
-      id: 9,
+      id: 10,
       name: "Transactional",
       image: "../image/transactional.jpg",
       description: "Transactional Email",
