@@ -48,6 +48,7 @@ const Projects = ({ projects }) => {
                 onChange={handleCategoryChange}
               >
                 <option value="">All</option>
+                <option value="HTMLEmail">HTML Email</option>
                 <option value="LandingPage">Landing Page</option>
                 <option value="JavaScript">JavaScript</option>
                 <option value="React">React</option>
