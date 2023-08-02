@@ -95,5 +95,15 @@ export default {
       github: "https://github.com/vsvang87/creditkarma/tree/master",
       category: "HTMLEmail",
     },
+    {
+      id: 9,
+      name: "Transactional",
+      image: "../image/transactional.jpg",
+      description: "Transactional Email",
+      tech: "HTML",
+      site: "https://dominotransaction.netlify.app/",
+      github: "https://github.com/vsvang87/Domino_Transactional/tree/master",
+      category: "HTMLEmail",
+    },
   ],
 };
