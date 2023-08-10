@@ -35,6 +35,10 @@
         display: flex;
         margin: 1.5rem 0;
         .github {
+          transition: 0.1s ease-in-out;
+          &:hover {
+            transform: scale(1.1);
+          }
           a {
             background: $offWhite;
             border: 1px solid $offWhite;
@@ -48,6 +52,10 @@
         }
         .linkedin {
           margin-left: 1rem;
+          transition: 0.1s ease-in-out;
+          &:hover {
+            transform: scale(1.1);
+          }
           a {
             background: $offWhite;
             border: 1px solid $offWhite;
