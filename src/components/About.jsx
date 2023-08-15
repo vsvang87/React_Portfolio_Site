@@ -41,17 +41,16 @@ function About() {
                 <p>
                   I'm a Software Developer based in Anderson, SC. I've developed
                   full-stack and frontend projects free for family members and
-                  local churches. I love helping others and making an impact
-                  where ever I can.
+                  local churches. Frontend development is my strong suit but I
+                  am experienced working in a full-stack environment. I
+                  regularly work with JavaScript and React.
                 </p>
 
                 <p>
-                  Frontend development is my strong suit but I am experienced
-                  working in a full-stack environment. I regularly work with
-                  JavaScript and React. I am always eager to learn new things
-                  and grow as a developer. Outside from code I enjoy spending
-                  time with my family and hanging out with friends. I also enjoy
-                  playing soccer and basketball.
+                  I am always eager to learn new things and grow as a developer.
+                  Outside from code I enjoy spending time with my family and
+                  hanging out with friends. I also enjoy playing soccer and
+                  basketball.
                 </p>
 
                 <div className="contact-container">
