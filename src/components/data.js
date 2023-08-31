@@ -84,18 +84,9 @@ export default {
       github: "https://github.com/vsvang87/LidsHtml/tree/master",
       category: "HTMLEmail",
     },
+
     {
       id: 9,
-      name: "News Letter",
-      image: "../image/creditkarma.jpg",
-      description: "Responsive News Letter Email.",
-      tech: "HTML",
-      site: "https://creditkarmhtmlemail.netlify.app",
-      github: "https://github.com/vsvang87/creditkarma/tree/master",
-      category: "HTMLEmail",
-    },
-    {
-      id: 10,
       name: "Transactional",
       image: "../image/transactional.jpg",
       description: "Responsive transactional email from Dominos.",
@@ -103,6 +94,16 @@ export default {
       site: "https://dominotransaction.netlify.app/",
       github: "https://github.com/vsvang87/Domino_Transactional/tree/master",
       category: "HTMLEmail",
+    },
+    {
+      id: 10,
+      name: "Drum Kit",
+      image: "../image/drumkit.jpg",
+      description: "Make drum sound by pressing letters on your keyboard.",
+      tech: "HTML, CSS, JavaScript",
+      site: "https://vdrumkit.netlify.app/",
+      github: "https://github.com/vsvang87/drum_kit/tree/master",
+      category: "JavaScript",
     },
   ],
 };
